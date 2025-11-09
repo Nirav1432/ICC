@@ -1,0 +1,37 @@
+
+export var UserManager = {
+
+    id: "",
+    role_id: "",
+    discom_id: "",
+    first_name: "",
+    last_name: "",
+    email: "",
+    mobile: "",
+    state_ids: "",
+    status: "",
+    otp: "",
+    login_status: "",
+    login_token: "",
+    created_at: "",
+    updated_at: "",
+    created_by: "",
+    updated_by: "",
+    fp_token: "",
+    fp_token_at: "",
+    is_password_reset: "",
+    nodal_agency: "",
+    role_name:"",
+    image_path:"",
+    login_token_at:"",
+    is_password_reset:"",
+    feederList:[],
+    majorComonentDTR:[],
+    majorComonentSubstation:[],
+    majorComonentFeeder:[],
+    majorComonentOthers:[],
+    majorComonentLT:[],
+    majorComonentHT:[],
+}
+
+

@@ -1,0 +1,26 @@
+import { StyleSheet } from "react-native";
+import { AppUtil } from "../../utils/AppUtil";
+import { Colors } from "../../utils/Colors";
+import { Fonts } from "../../utils/Fonts";
+
+const EnableViewStyle = StyleSheet.create({ 
+    headerText: {
+        fontSize: AppUtil.getHP(1.75),
+        color: Colors.darkBlack,
+        marginBottom: AppUtil.getHP(0.7),
+        fontFamily:Fonts.RobotoMedium
+
+    },
+    btnDrop: {
+        width: '100%',
+        height: AppUtil.getHP(6.16),
+        backgroundColor: Colors.white,
+        borderRadius: 5,
+        justifyContent: "space-between",
+        alignItems: "center",
+        flexDirection:'row',
+        paddingHorizontal:AppUtil.getWP(3),
+    },
+
+ });
+export default EnableViewStyle;

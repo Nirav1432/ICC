@@ -1,0 +1,423 @@
+  $ /opt/homebrew/bin/node -p require.resolve(        'react-native/scripts/react_native_pods.rb',        {paths: [process.argv[1]]},      ) /Users/khasiyasagar/Desktop/STTL/ipsa-rec-app/ios
+  /Users/khasiyasagar/Desktop/STTL/ipsa-rec-app/node_modules/react-native/scripts/react_native_pods.rb
+  $ /opt/homebrew/bin/node -p require.resolve(        'react-native-permissions/scripts/setup.rb',        {paths: [process.argv[1]]},      ) /Users/khasiyasagar/Desktop/STTL/ipsa-rec-app/ios
+  /Users/khasiyasagar/Desktop/STTL/ipsa-rec-app/node_modules/react-native-permissions/scripts/setup.rb
+  $ /opt/homebrew/bin/node -e try {console.log(require('@react-native-community/cli').bin);} catch (e) {console.log(require('react-native/cli').bin);}
+  /Users/khasiyasagar/Desktop/STTL/ipsa-rec-app/node_modules/@react-native-community/cli/build/bin.js
+Auto-linking React Native modules for target `IPSA`: BVLinearGradient, RNCAsyncStorage, RNCPicker, RNDeviceInfo, RNFastImage, RNFlashList, RNGestureHandler, RNPermissions, RNReanimated, RNSVG, RNScreens, react-native-date-picker, react-native-document-picker, react-native-geolocation, react-native-html-to-pdf, react-native-image-picker, react-native-maps, react-native-netinfo, react-native-pager-view, react-native-safe-area-context, react-native-sqlite-storage, react-native-view-shot, and react-native-webview
+Framework build type is static library
+  $ /bin/mkdir -p ./build/generated/ios
+[Codegen] Generating ./build/generated/ios/React-Codegen.podspec.json
+  Preparing
+
+Updating local specs repositories
+  CDN: trunk Relative path: CocoaPods-version.yml exists! Returning local because checking is only performed in repo update
+
+Updating spec repo `trunk`
+  CDN: trunk Relative path: deprecated_podspecs.txt, has ETag? W/"68effff7-d24d0"
+  CDN: trunk Relative path downloaded: deprecated_podspecs.txt, save ETag: W/"68f00ae3-d24d0"
+  CDN: trunk Going to update 30 files
+  CDN: trunk Relative path: CocoaPods-version.yml, has ETag? "68effff7-38"
+  CDN: trunk Relative path: all_pods_versions_0_6_6.txt, has ETag? W/"68effff7-e4e"
+  CDN: trunk Relative path: all_pods_versions_0_9_9.txt, has ETag? W/"68effff7-7b5"
+  CDN: trunk Relative path: all_pods_versions_1_1_7.txt, has ETag? W/"68effff7-d50"
+  CDN: trunk Relative path: all_pods_versions_1_9_2.txt, has ETag? W/"68effff7-255"
+  CDN: trunk Relative path: all_pods_versions_1_d_1.txt, has ETag? W/"68effff7-629"
+  CDN: trunk Relative path: all_pods_versions_1_d_4.txt, has ETag? W/"68effff7-6bb"
+  CDN: trunk Relative path: all_pods_versions_1_e_b.txt, has ETag? W/"68effff7-790"
+  CDN: trunk Relative path: all_pods_versions_2_1_2.txt, has ETag? W/"68effff7-3d9"
+  CDN: trunk Relative path: all_pods_versions_2_7_2.txt, has ETag? W/"68effff7-489"
+  CDN: trunk Relative path: all_pods_versions_3_2_5.txt, has ETag? W/"68effff7-c8f"
+  CDN: trunk Relative path: all_pods_versions_3_3_c.txt, has ETag? W/"68effff7-69d"
+  CDN: trunk Relative path: all_pods_versions_3_4_e.txt, has ETag? W/"68effff7-44f"
+  CDN: trunk Relative path: all_pods_versions_3_7_4.txt, has ETag? W/"68effff7-3a9"
+  CDN: trunk Relative path: all_pods_versions_5_6_4.txt, has ETag? W/"68effff7-519"
+  CDN: trunk Relative path: all_pods_versions_5_7_2.txt, has ETag? W/"68effff7-7ad"
+  CDN: trunk Relative path: all_pods_versions_7_1_d.txt, has ETag? W/"68effff7-7a6"
+  CDN: trunk Relative path: all_pods_versions_7_6_3.txt, has ETag? W/"68effff7-307"
+  CDN: trunk Relative path: all_pods_versions_9_4_7.txt, has ETag? W/"68effff7-5fe"
+  CDN: trunk Relative path: all_pods_versions_a_9_3.txt, has ETag? W/"68effff7-849"
+  CDN: trunk Relative path: all_pods_versions_a_e_a.txt, has ETag? W/"68effff7-d83"
+  CDN: trunk Relative path: all_pods_versions_d_1_3.txt, has ETag? W/"68effff7-703"
+  CDN: trunk Relative path: all_pods_versions_d_6_6.txt, has ETag? W/"68effff7-703"
+  CDN: trunk Relative path: all_pods_versions_e_9_d.txt, has ETag? W/"68effff7-5e6"
+  CDN: trunk Relative path: all_pods_versions_e_d_6.txt, has ETag? W/"68effff7-8d3"
+  CDN: trunk Relative path: all_pods_versions_f_9_9.txt, has ETag? W/"68effff7-48a"
+  CDN: trunk Relative path: Specs/9/4/7/YogaKit/2.0.0-beta.1/YogaKit.podspec.json, has ETag? W/"39e-ZQMIS/P4d8O7p9fGhMgXDPSl/eM"
+  CDN: trunk Relative path: Specs/9/4/7/YogaKit/2.0.0-beta.2/YogaKit.podspec.json, has ETag? W/"39e-eEx5ShVbc24lOHJdtVJWK2xIfWU"
+  CDN: trunk Relative path: Specs/9/4/7/YogaKit/2.0.0/YogaKit.podspec.json, has ETag? W/"389-m6JNL1rEazQr42hTOcDhXoWnDCU"
+  CDN: trunk Relative path: Specs/9/4/7/YogaKit/2.0.1/YogaKit.podspec.json, has ETag? W/"389-R1G6Zz+rSd8p4iNeI8TqfW1aM5w"
+  CDN: trunk Relative path downloaded: CocoaPods-version.yml, save ETag: "68f00ae3-38"
+  CDN: trunk Relative path downloaded: all_pods_versions_0_9_9.txt, save ETag: W/"68f00945-7b5"
+  CDN: trunk Relative path downloaded: all_pods_versions_1_d_4.txt, save ETag: W/"68f00945-6bb"
+  CDN: trunk Relative path downloaded: all_pods_versions_2_7_2.txt, save ETag: W/"68f00945-489"
+  CDN: trunk Relative path downloaded: all_pods_versions_3_2_5.txt, save ETag: W/"68f00945-c8f"
+  CDN: trunk Relative path downloaded: all_pods_versions_3_3_c.txt, save ETag: W/"68f00945-69d"
+  CDN: trunk Relative path downloaded: all_pods_versions_3_4_e.txt, save ETag: W/"68f00945-44f"
+  CDN: trunk Relative path downloaded: all_pods_versions_5_6_4.txt, save ETag: W/"68f00945-519"
+  CDN: trunk Relative path downloaded: all_pods_versions_5_7_2.txt, save ETag: W/"68f00945-7ad"
+  CDN: trunk Relative path downloaded: all_pods_versions_7_1_d.txt, save ETag: W/"68f00945-7a6"
+  CDN: trunk Redirecting from https://cdn.cocoapods.org/Specs/9/4/7/YogaKit/2.0.0-beta.2/YogaKit.podspec.json to https://cdn.jsdelivr.net/cocoa/Specs/9/4/7/YogaKit/2.0.0-beta.2/YogaKit.podspec.json
+  CDN: trunk Redirecting from https://cdn.cocoapods.org/Specs/9/4/7/YogaKit/2.0.1/YogaKit.podspec.json to https://cdn.jsdelivr.net/cocoa/Specs/9/4/7/YogaKit/2.0.1/YogaKit.podspec.json
+  CDN: trunk Relative path downloaded: all_pods_versions_7_6_3.txt, save ETag: W/"68f00945-307"
+  CDN: trunk Relative path downloaded: all_pods_versions_9_4_7.txt, save ETag: W/"68f00945-5fe"
+  CDN: trunk Relative path downloaded: all_pods_versions_a_9_3.txt, save ETag: W/"68f00945-849"
+  CDN: trunk Relative path downloaded: all_pods_versions_a_e_a.txt, save ETag: W/"68f00945-d83"
+  CDN: trunk Relative path downloaded: all_pods_versions_d_6_6.txt, save ETag: W/"68f00945-703"
+  CDN: trunk Relative path downloaded: all_pods_versions_e_d_6.txt, save ETag: W/"68f00945-8d3"
+  CDN: trunk Redirecting from https://cdn.cocoapods.org/Specs/9/4/7/YogaKit/2.0.0-beta.1/YogaKit.podspec.json to https://cdn.jsdelivr.net/cocoa/Specs/9/4/7/YogaKit/2.0.0-beta.1/YogaKit.podspec.json
+  CDN: trunk Redirecting from https://cdn.cocoapods.org/Specs/9/4/7/YogaKit/2.0.0/YogaKit.podspec.json to https://cdn.jsdelivr.net/cocoa/Specs/9/4/7/YogaKit/2.0.0/YogaKit.podspec.json
+  CDN: trunk Relative path downloaded: all_pods_versions_0_6_6.txt, save ETag: W/"68f00ae3-e4e"
+  CDN: trunk Relative path downloaded: all_pods_versions_1_1_7.txt, save ETag: W/"68f00ae3-d50"
+  CDN: trunk Relative path downloaded: all_pods_versions_1_9_2.txt, save ETag: W/"68f00ae3-255"
+  CDN: trunk Relative path downloaded: all_pods_versions_1_d_1.txt, save ETag: W/"68f00ae3-629"
+  CDN: trunk Relative path downloaded: all_pods_versions_1_e_b.txt, save ETag: W/"68f00ae3-790"
+  CDN: trunk Relative path downloaded: all_pods_versions_2_1_2.txt, save ETag: W/"68f00ae3-3d9"
+  CDN: trunk Relative path downloaded: all_pods_versions_3_7_4.txt, save ETag: W/"68f00ae3-3a9"
+  CDN: trunk Relative path downloaded: all_pods_versions_e_9_d.txt, save ETag: W/"68f00ae3-5e6"
+  CDN: trunk Relative path downloaded: all_pods_versions_f_9_9.txt, save ETag: W/"68f00ae3-48a"
+  CDN: trunk Relative path downloaded: all_pods_versions_d_1_3.txt, save ETag: W/"68f00ae3-703"
+  CDN: trunk Relative path not modified: Specs/9/4/7/YogaKit/2.0.1/YogaKit.podspec.json
+  CDN: trunk Relative path not modified: Specs/9/4/7/YogaKit/2.0.0-beta.2/YogaKit.podspec.json
+  CDN: trunk Relative path not modified: Specs/9/4/7/YogaKit/2.0.0-beta.1/YogaKit.podspec.json
+  CDN: trunk Relative path not modified: Specs/9/4/7/YogaKit/2.0.0/YogaKit.podspec.json
+
+Analyzing dependencies
+
+Inspecting targets to integrate
+  Using `ARCHS` setting to build architectures of target `Pods-IPSA`: (``)
+  Using `ARCHS` setting to build architectures of target `Pods-IPSA-IPSATests`: (``)
+
+Fetching external sources
+-> Fetching podspec for `BVLinearGradient` from `../node_modules/react-native-linear-gradient`
+-> Fetching podspec for `DoubleConversion` from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`
+-> Fetching podspec for `FBLazyVector` from `../node_modules/react-native/Libraries/FBLazyVector`
+-> Fetching podspec for `FBReactNativeSpec` from `../node_modules/react-native/React/FBReactNativeSpec`
+[Codegen] Found FBReactNativeSpec
+-> Fetching podspec for `RCT-Folly` from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`
+-> Fetching podspec for `RCTRequired` from `../node_modules/react-native/Libraries/RCTRequired`
+-> Fetching podspec for `RCTTypeSafety` from `../node_modules/react-native/Libraries/TypeSafety`
+-> Fetching podspec for `RNCAsyncStorage` from `../node_modules/@react-native-async-storage/async-storage`
+-> Fetching podspec for `RNCPicker` from `../node_modules/@react-native-picker/picker`
+-> Fetching podspec for `RNDeviceInfo` from `../node_modules/react-native-device-info`
+-> Fetching podspec for `RNFastImage` from `../node_modules/react-native-fast-image`
+-> Fetching podspec for `RNFlashList` from `../node_modules/@shopify/flash-list`
+-> Fetching podspec for `RNGestureHandler` from `../node_modules/react-native-gesture-handler`
+-> Fetching podspec for `RNPermissions` from `../node_modules/react-native-permissions`
+-> Fetching podspec for `RNReanimated` from `../node_modules/react-native-reanimated`
+-> Fetching podspec for `RNSVG` from `../node_modules/react-native-svg`
+-> Fetching podspec for `RNScreens` from `../node_modules/react-native-screens`
+-> Fetching podspec for `React` from `../node_modules/react-native/`
+-> Fetching podspec for `React-Codegen` from `build/generated/ios`
+-> Fetching podspec for `React-Core` from `../node_modules/react-native/`
+-> Fetching podspec for `React-CoreModules` from `../node_modules/react-native/React/CoreModules`
+-> Fetching podspec for `React-RCTActionSheet` from `../node_modules/react-native/Libraries/ActionSheetIOS`
+-> Fetching podspec for `React-RCTAnimation` from `../node_modules/react-native/Libraries/NativeAnimation`
+-> Fetching podspec for `React-RCTAppDelegate` from `../node_modules/react-native/Libraries/AppDelegate`
+-> Fetching podspec for `React-RCTBlob` from `../node_modules/react-native/Libraries/Blob`
+-> Fetching podspec for `React-RCTImage` from `../node_modules/react-native/Libraries/Image`
+-> Fetching podspec for `React-RCTLinking` from `../node_modules/react-native/Libraries/LinkingIOS`
+-> Fetching podspec for `React-RCTNetwork` from `../node_modules/react-native/Libraries/Network`
+-> Fetching podspec for `React-RCTSettings` from `../node_modules/react-native/Libraries/Settings`
+-> Fetching podspec for `React-RCTText` from `../node_modules/react-native/Libraries/Text`
+-> Fetching podspec for `React-RCTVibration` from `../node_modules/react-native/Libraries/Vibration`
+-> Fetching podspec for `React-callinvoker` from `../node_modules/react-native/ReactCommon/callinvoker`
+-> Fetching podspec for `React-cxxreact` from `../node_modules/react-native/ReactCommon/cxxreact`
+-> Fetching podspec for `React-hermes` from `../node_modules/react-native/ReactCommon/hermes`
+-> Fetching podspec for `React-jsi` from `../node_modules/react-native/ReactCommon/jsi`
+-> Fetching podspec for `React-jsiexecutor` from `../node_modules/react-native/ReactCommon/jsiexecutor`
+-> Fetching podspec for `React-jsinspector` from `../node_modules/react-native/ReactCommon/jsinspector`
+-> Fetching podspec for `React-logger` from `../node_modules/react-native/ReactCommon/logger`
+-> Fetching podspec for `React-perflogger` from `../node_modules/react-native/ReactCommon/reactperflogger`
+-> Fetching podspec for `React-runtimeexecutor` from `../node_modules/react-native/ReactCommon/runtimeexecutor`
+-> Fetching podspec for `ReactCommon` from `../node_modules/react-native/ReactCommon`
+-> Fetching podspec for `Yoga` from `../node_modules/react-native/ReactCommon/yoga`
+-> Fetching podspec for `boost` from `../node_modules/react-native/third-party-podspecs/boost.podspec`
+-> Fetching podspec for `glog` from `../node_modules/react-native/third-party-podspecs/glog.podspec`
+-> Fetching podspec for `hermes-engine` from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`
+-> Fetching podspec for `react-native-date-picker` from `../node_modules/react-native-date-picker`
+-> Fetching podspec for `react-native-document-picker` from `../node_modules/react-native-document-picker`
+-> Fetching podspec for `react-native-geolocation` from `../node_modules/@react-native-community/geolocation`
+-> Fetching podspec for `react-native-html-to-pdf` from `../node_modules/react-native-html-to-pdf`
+-> Fetching podspec for `react-native-image-picker` from `../node_modules/react-native-image-picker`
+-> Fetching podspec for `react-native-maps` from `../node_modules/react-native-maps`
+-> Fetching podspec for `react-native-netinfo` from `../node_modules/@react-native-community/netinfo`
+-> Fetching podspec for `react-native-pager-view` from `../node_modules/react-native-pager-view`
+-> Fetching podspec for `react-native-safe-area-context` from `../node_modules/react-native-safe-area-context`
+-> Fetching podspec for `react-native-sqlite-storage` from `../node_modules/react-native-sqlite-storage`
+-> Fetching podspec for `react-native-view-shot` from `../node_modules/react-native-view-shot`
+-> Fetching podspec for `react-native-webview` from `../node_modules/react-native-webview`
+
+Resolving dependencies of `Podfile`
+  CDN: trunk Relative path: all_pods_versions_0_9_9.txt modified during this run! Returning local
+  CDN: trunk Relative path: Specs/0/9/9/libevent/2.1.12/libevent.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_1_1_7.txt modified during this run! Returning local
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.21.3/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_e_9_d.txt modified during this run! Returning local
+  CDN: trunk Relative path: Specs/e/9/d/SDWebImageWebPCoder/0.14.6/SDWebImageWebPCoder.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_7_6_3.txt modified during this run! Returning local
+  CDN: trunk Relative path: Specs/7/6/3/fmt/7.1.3/fmt.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/9/9/libevent/2.1.12/libevent.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.11.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.11.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/7/6/3/fmt/6.2.1/fmt.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/9/9/libevent/2.1.12/libevent.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/e/9/d/SDWebImageWebPCoder/0.8.5/SDWebImageWebPCoder.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/e/9/d/SDWebImageWebPCoder/0.8.4/SDWebImageWebPCoder.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.10.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.10.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.10.2/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.10.3/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.10.4/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.11.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.11.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.12.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.12.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.12.2/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.12.3/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.12.4/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.12.5/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.12.6/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.13.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.13.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.13.2/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.13.3/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.13.4/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.13.5/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.14.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.14.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.14.2/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.14.3/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.2/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.3/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.4/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.5/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.6/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.7/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.15.8/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.16.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.17.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.2/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.3/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.4/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.5/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.6/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.7/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.8/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.9/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.10/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.11/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.18.12/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.19.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.19.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.19.2/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.19.4/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.19.5/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.19.6/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.19.7/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.20.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.20.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.21.0/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.21.1/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.21.2/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/1/7/SDWebImage/5.21.3/SDWebImage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_1_9_2.txt modified during this run! Returning local
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.5.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.5.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.4.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.3.2/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.3.1/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.3.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.2.4/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.2.3/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.2.2/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.2.1/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.2.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.1.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.1.0-rc2/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.0.3/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.0.2/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.0.1/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.0.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.5.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.5.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.5.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/1/9/2/libwebp/1.5.0/libwebp.podspec.json exists! Returning local because checking is only performed in repo update
+
+Comparing resolved specification to the sandbox manifest
+  A BVLinearGradient
+  A DoubleConversion
+  A FBLazyVector
+  A FBReactNativeSpec
+  A RCT-Folly
+  A RCTRequired
+  A RCTTypeSafety
+  A RNCAsyncStorage
+  A RNCPicker
+  A RNDeviceInfo
+  A RNFastImage
+  A RNFlashList
+  A RNGestureHandler
+  A RNPermissions
+  A RNReanimated
+  A RNSVG
+  A RNScreens
+  A React
+  A React-Codegen
+  A React-Core
+  A React-CoreModules
+  A React-RCTActionSheet
+  A React-RCTAnimation
+  A React-RCTAppDelegate
+  A React-RCTBlob
+  A React-RCTImage
+  A React-RCTLinking
+  A React-RCTNetwork
+  A React-RCTSettings
+  A React-RCTText
+  A React-RCTVibration
+  A React-callinvoker
+  A React-cxxreact
+  A React-hermes
+  A React-jsi
+  A React-jsiexecutor
+  A React-jsinspector
+  A React-logger
+  A React-perflogger
+  A React-runtimeexecutor
+  A ReactCommon
+  A SDWebImage
+  A SDWebImageWebPCoder
+  A Yoga
+  A boost
+  A fmt
+  A glog
+  A hermes-engine
+  A libevent
+  A libwebp
+  A react-native-date-picker
+  A react-native-document-picker
+  A react-native-geolocation
+  A react-native-html-to-pdf
+  A react-native-image-picker
+  A react-native-maps
+  A react-native-netinfo
+  A react-native-pager-view
+  A react-native-safe-area-context
+  A react-native-sqlite-storage
+  A react-native-view-shot
+  A react-native-webview
+
+Downloading dependencies
+
+-> Installing BVLinearGradient (2.8.3)
+
+-> Installing DoubleConversion (1.1.6)
+  > Copying DoubleConversion from `/Users/khasiyasagar/Library/Caches/CocoaPods/Pods/External/DoubleConversion/77f51e588bfe0e5c4fa6e9c580da62c6-5189b` to `Pods/DoubleConversion`
+
+-> Installing FBLazyVector (0.71.8)
+
+-> Installing FBReactNativeSpec (0.71.8)
+ > Running prepare command
+   $ /bin/bash -c  set -e mkdir -p ../../../../ios/build/generated/ios/./FBReactNativeSpec && touch -a ../../../../ios/build/generated/ios/./FBReactNativeSpec/FBReactNativeSpec.h ../../../../ios/build/generated/ios/./FBReactNativeSpec/FBReactNativeSpec-generated.mm
+
+-> Installing RCT-Folly (2021.07.22.00)
+  > Copying RCT-Folly from `/Users/khasiyasagar/Library/Caches/CocoaPods/Pods/External/RCT-Folly/b957572a7e21d425b31cc1761b00a672-8dc08` to `Pods/RCT-Folly`
+
+-> Installing RCTRequired (0.71.8)
+
+-> Installing RCTTypeSafety (0.71.8)
+
+-> Installing RNCAsyncStorage (1.23.1)
+
+-> Installing RNCPicker (2.7.7)
+
+-> Installing RNDeviceInfo (10.14.0)
+
+-> Installing RNFastImage (8.6.3)
+
+-> Installing RNFlashList (1.7.3)
+
+-> Installing RNGestureHandler (2.17.1)
+
+-> Installing RNPermissions (4.1.5)
+
+-> Installing RNReanimated (3.5.4)
+
+-> Installing RNSVG (13.14.1)
+
+-> Installing RNScreens (3.32.0)
+
+-> Installing React (0.71.8)
+
+-> Installing React-Codegen (0.71.8)
+
+-> Installing React-Core (0.71.8)
+
+-> Installing React-CoreModules (0.71.8)
+
+-> Installing React-RCTActionSheet (0.71.8)
+
+-> Installing React-RCTAnimation (0.71.8)
+
+-> Installing React-RCTAppDelegate (0.71.8)
+
+-> Installing React-RCTBlob (0.71.8)
+
+-> Installing React-RCTImage (0.71.8)
+
+-> Installing React-RCTLinking (0.71.8)
+
+-> Installing React-RCTNetwork (0.71.8)
+
+-> Installing React-RCTSettings (0.71.8)
+
+-> Installing React-RCTText (0.71.8)
+
+-> Installing React-RCTVibration (0.71.8)
+
+-> Installing React-callinvoker (0.71.8)
+
+-> Installing React-cxxreact (0.71.8)
+
+-> Installing React-hermes (0.71.8)
+
+-> Installing React-jsi (0.71.8)
+
+-> Installing React-jsiexecutor (0.71.8)
+
+-> Installing React-jsinspector (0.71.8)
+
+-> Installing React-logger (0.71.8)
+
+-> Installing React-perflogger (0.71.8)
+
+-> Installing React-runtimeexecutor (0.71.8)
+
+-> Installing ReactCommon (0.71.8)
+
+-> Installing SDWebImage (5.11.1)
+  > Copying SDWebImage from `/Users/khasiyasagar/Library/Caches/CocoaPods/Pods/Release/SDWebImage/5.11.1-a7f83` to `Pods/SDWebImage`
+
+-> Installing SDWebImageWebPCoder (0.8.5)
+  > Copying SDWebImageWebPCoder from `/Users/khasiyasagar/Library/Caches/CocoaPods/Pods/Release/SDWebImageWebPCoder/0.8.5-908b8` to `Pods/SDWebImageWebPCoder`
+
+-> Installing Yoga (1.14.0)
+
+-> Installing boost (1.76.0)
+  > Copying boost from `/Users/khasiyasagar/Library/Caches/CocoaPods/Pods/External/boost/d6c4e9d3044ab9fe00117ad0fcd21da4-7dcd2` to `Pods/boost`
+
+-> Installing fmt (6.2.1)
+  > Copying fmt from `/Users/khasiyasagar/Library/Caches/CocoaPods/Pods/Release/fmt/6.2.1-ff9d5` to `Pods/fmt`
+
+-> Installing glog (0.3.5)
+ > Git download
+ > Git download
+     $ /usr/bin/git clone https://github.com/google/glog.git /var/folders/p0/jdbvwqkn3_52fkxhpqkprdjw0000gn/T/d20251016-2497-enuvq6 --template= --single-branch --depth 1 --branch v0.3.5
+  $ /usr/bin/rsync -a --exclude=.git --delete /var/folders/p0/jdbvwqkn3_52fkxhpqkprdjw0000gn/T/d20251016-2497-enuvq6/ /Users/khasiyasagar/Library/Caches/CocoaPods/Pods/External/glog/2263bd123499e5b93b5efe24871be317-04b94
+ > Running prepare command
+   $ /bin/bash -c  set -e #!/bin/bash # Copyright (c) Meta Platforms, Inc. and affiliates. # # This source code is licensed under the MIT license found in the # LICENSE file in the root directory of this source tree.  set -e  PLATFORM_NAME="${PLATFORM_NAME:-iphoneos}" CURRENT_ARCH="${CURRENT_ARCH}"  if [ -z "$CURRENT_ARCH" ] || [ "$CURRENT_ARCH" == "undefined_arch" ]; then     # Xcode 10 beta sets CURRENT_ARCH to "undefined_arch", this leads to incorrect linker arg.     # it's better to rely on platform name as fallback because architecture differs between simulator and device      if [[ "$PLATFORM_NAME" == *"simulator"* ]]; then         CURRENT_ARCH="x86_64"     else         CURRENT_ARCH="arm64"     fi fi  # @lint-ignore-every TXT2 Tab Literal if [ "$CURRENT_ARCH" == "arm64" ]; then     cat <<\EOF >>fix_glog_0.3.5_apple_silicon.patch diff --git a/config.sub b/config.sub index 1761d8b..43fa2e8 100755 --- a/config.sub +++ b/config.sub @@ -1096,6 +1096,9 @@ case $basic_machine in  		basic_machine=z8k-unknown  		os=-sim  		;; +	arm64-*) +		basic_machine=$(echo $basic_machine | sed 's/arm64/aarch64/') +		;;  	none)  		basic_machine=none-none  		os=-none EOF      patch -p1 config.sub fix_glog_0.3.5_apple_silicon.patch fi  export CC="$(xcrun -find -sdk $PLATFORM_NAME cc) -arch $CURRENT_ARCH -isysroot $(xcrun -sdk $PLATFORM_NAME --show-sdk-path)" export CXX="$CC"  # Remove automake symlink if it exists if [ -h "test-driver" ]; then     rm test-driver fi  # Manually disable gflags include to fix issue https://github.com/facebook/react-native/issues/28446 sed -i.bak -e 's/\@ac_cv_have_libgflags\@/0/' src/glog/logging.h.in && rm src/glog/logging.h.in.bak sed -i.bak -e 's/HAVE_LIB_GFLAGS/HAVE_LIB_GFLAGS_DISABLED/' src/config.h.in && rm src/config.h.in.bak  ./configure --host arm-apple-darwin  cat << EOF >> src/config.h /* Add in so we have Apple Target Conditionals */ #ifdef __APPLE__ #include <TargetConditionals.h> #include <Availability.h> #endif  /* Special configuration for ucontext */ #undef HAVE_UCONTEXT_H #undef PC_FROM_UCONTEXT #if defined(__x86_64__) #define PC_FROM_UCONTEXT uc_mcontext->__ss.__rip #elif defined(__i386__) #define PC_FROM_UCONTEXT uc_mcontext->__ss.__eip #endif EOF  # Prepare exported header include EXPORTED_INCLUDE_DIR="exported/glog" mkdir -p exported/glog cp -f src/glog/log_severity.h "$EXPORTED_INCLUDE_DIR/" cp -f src/glog/logging.h "$EXPORTED_INCLUDE_DIR/" cp -f src/glog/raw_logging.h "$EXPORTED_INCLUDE_DIR/" cp -f src/glog/stl_logging.h "$EXPORTED_INCLUDE_DIR/" cp -f src/glog/vlog_is_on.h "$EXPORTED_INCLUDE_DIR/"

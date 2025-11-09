@@ -1,0 +1,174 @@
+//import liraries
+import { View, Text, Modal, TouchableOpacity, TextInput, StyleSheet } from "react-native";
+import React, { useEffect, useState } from "react";
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import { Colors } from "../utils/Colors";
+import { Fonts } from "../utils/Fonts";
+import { AppUtil } from "../utils/AppUtil";
+import { BranchPoint, BranchPoint1, PoleType, PoleType1, RDSSExisting, RDSSExisting1 } from "../utils/CardData";
+import SingleValueDropdownListSetOldData from "./singleselectlist/SingleValueDropdownListSetOldData";
+
+// create a component
+const PollDetails = ({ handleClose, isModalVisible, option,
+    oldPolltype, onSelectPoleType,
+    oldPoleHeight, onSelectPoleHeight,
+    oldPoleSpecifyType, onSelectPoleSpecifyType,
+    oldExistingPole, onSelectExistingPole,
+    oldBranchPoint, onSelectBranchPoint,
+
+}) => {
+
+    useEffect(() => {
+        SetPoleHeight(oldPoleHeight);
+        SetPoleSpecifyType(oldPoleSpecifyType);
+    }, [oldPoleHeight, oldPolltype])
+
+    const [isPoleHeight, SetPoleHeight] = React.useState(oldPoleHeight);
+    const [isPoleType, SetPoleType] = React.useState(oldPolltype);
+    const [isPoleSpecifyType, SetPoleSpecifyType] = React.useState(oldPoleSpecifyType);
+
+    function onManagePoleType(value) {
+        onSelectPoleType(value);
+        SetPoleType(value);
+
+        if(isPoleType != "Others" ){
+            SetPoleSpecifyType("");
+            onSelectPoleSpecifyType("");
+        }
+    }
+
+    return (
+
+        <Modal animationType="slide" visible={isModalVisible} transparent={true}>
+
+            <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+                <View style={ModalViewStyle.container}>
+                    <KeyboardAwareScrollView>
+
+                        <View style={ModalViewStyle.header}>
+                            <View style={ModalViewStyle.headerLeft}>
+                                <Text style={ModalViewStyle.title}>Pole details</Text>
+                            </View>
+
+                            <View style={ModalViewStyle.headerRight}>
+                                <TouchableOpacity onPress={handleClose}>
+                                    <Text style={{ color: "black" }}>Close</Text>
+                                </TouchableOpacity>
+                            </View>
+                        </View>
+
+                        <View style={ModalViewStyle.fields}>
+                            <SingleValueDropdownListSetOldData oldIndex={PoleType1?.indexOf(oldPolltype)} title={"Pole Type*"} data={PoleType1} onSelectedSevice={(value) => onManagePoleType(value)} />
+
+                            {
+                                isPoleType === "Others" &&
+                                <View style={ModalViewStyle.marginTop} >
+                                    <Text style={ModalViewStyle.headerText}>{"If Others, specify type*"}</Text>
+                                    <TextInput
+                                        maxLength={70}
+                                        value={isPoleSpecifyType}
+                                        style={ModalViewStyle.inpView}
+                                        onChangeText={(txt) => { SetPoleSpecifyType(txt), onSelectPoleSpecifyType(txt) }}
+                                    />
+                                </View>
+                            }
+                            
+                            <View style={ModalViewStyle.marginTop} >
+                                <Text style={ModalViewStyle.headerText}>{"Pole Height (meters)*"}</Text>
+                                <TextInput
+                                    maxLength={70}
+                                    value={isPoleHeight}
+                                    style={ModalViewStyle.inpView}
+                                    keyboardType="number-pad"
+                                    onChangeText={(txt) => { SetPoleHeight(txt), onSelectPoleHeight(txt) }}
+                                />
+                            </View>
+
+                           
+
+
+                            <SingleValueDropdownListSetOldData oldIndex={RDSSExisting1?.indexOf(oldExistingPole)} title={"RDSS or existing pole*"} data={RDSSExisting1} onSelectedSevice={(value) => onSelectExistingPole(value)} />
+                            <SingleValueDropdownListSetOldData oldIndex={BranchPoint1?.indexOf(oldBranchPoint)} title={"Is this a branch point?*"} data={BranchPoint1} onSelectedSevice={(value) => onSelectBranchPoint(value)} />
+
+                                
+                        </View>
+
+                        <TouchableOpacity onPress={() => { handleClose() }} style={ModalViewStyle.btnSave}>
+                            <Text style={ModalViewStyle.btnLoginText}>{"Save"}</Text>
+                        </TouchableOpacity>
+
+                    </KeyboardAwareScrollView>
+
+                </View >
+            </View >
+
+        </Modal >
+
+    );
+};
+
+// define your styles
+const ModalViewStyle = StyleSheet.create({
+
+    container: {
+        backgroundColor: Colors.primaryBackground, borderRadius: 10, width: "90%",
+        marginVertical: "5%",
+        marginHorizontal: "5%",
+        alignSelf: "center",
+        padding: AppUtil.getHP(3),
+        borderWidth: 1,
+        borderColor: Colors.lightGray,
+    },
+
+    header: { flexDirection: "row", },
+    headerLeft: { flex: 1, justifyContent: "center", alignItems: "flex-start", },
+    headerRight: { justifyContent: "center", alignItems: "flex-end", },
+    fields: {
+        width: "100%",
+    },
+
+    title: {
+        fontSize: 16,
+        fontWeight: "bold",
+        color: Colors.darkBlack,
+    },
+
+
+    marginTop: {
+        paddingHorizontal: 2,
+        marginTop: AppUtil.getHP(2),
+    },
+
+
+    headerText: {
+        fontSize: 12,
+        color: Colors.darkBlack,
+        marginBottom: AppUtil.getHP(0.7),
+        fontFamily: Fonts.RobotoMedium
+    },
+    inpView: {
+        width: '100%',
+        height: AppUtil.getHP(6.16),
+        backgroundColor: Colors.white,
+        borderRadius: 5,
+        justifyContent: "space-between",
+        alignItems: "center",
+        paddingHorizontal: AppUtil.getWP(3),
+    },
+    btnSave: {
+        marginTop: 10,
+        borderRadius: 10,
+        alignItems: "center",
+        justifyContent: "center",
+        height: 40,
+        backgroundColor: Colors.orange,
+    },
+    btnLoginText: {
+        fontSize: AppUtil.getHP(2),
+        fontFamily: Fonts.RobotoMedium,
+        color: Colors.white,
+    },
+});
+
+//make this component available to the app
+export default PollDetails;
